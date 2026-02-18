@@ -124,8 +124,6 @@ namespace HSM_CommonCS.Core
             var logPath = servicesSection.GetSection(serviceName).GetValue<string>("LogPath")
                 ?? defaultLog;
 
-            
-
             return new CoreConfig(
                 ApplicationName: serviceName,
                 Database: new DatabaseConfig(dbConn),
