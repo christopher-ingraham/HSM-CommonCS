@@ -1,4 +1,5 @@
 ﻿using HSM_CommonCS.Database;
+using HSM_CommonCS.Messaging;
 
 namespace HSM_CommonCS.Core
 {
@@ -13,5 +14,7 @@ namespace HSM_CommonCS.Core
 
         /// <summary>Gets the database session factory</summary>
         protected static IDbSessionFactory Db => CoreHost.Db;
+
+        protected static IMessageBus Bus => CoreHost.Bus;
     }
 }
